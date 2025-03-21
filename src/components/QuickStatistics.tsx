@@ -3,7 +3,7 @@ import { Trophy, Clipboard, CheckCircle } from "lucide-react";
 interface QuickStatisticsProps {
   rank: number;
   percentile: number;
-  correctAnswers: string;
+  correctAnswers: number;
 }
 
 const QuickStatistics: React.FC<QuickStatisticsProps> = ({ rank, percentile, correctAnswers }) => {
@@ -18,7 +18,7 @@ const QuickStatistics: React.FC<QuickStatisticsProps> = ({ rank, percentile, cor
             <Trophy className="text-yellow-500 w-8 h-8" />
           </div>
           <p className="text-xl font-bold mt-2">{rank}</p>
-          <span className="text-gray-500 text-sm">YOUR RANK</span>
+          <span className="text-gray-900 font-semibold text-sm">Rank: {rank}</span>
         </div>
 
         {/* Divider */}
@@ -30,7 +30,7 @@ const QuickStatistics: React.FC<QuickStatisticsProps> = ({ rank, percentile, cor
             <Clipboard className="text-gray-500 w-8 h-8" />
           </div>
           <p className="text-xl font-bold mt-2">{percentile}%</p>
-          <span className="text-gray-500 text-sm">PERCENTILE</span>
+          <span className="text-gray-900 font-semibold text-sm">Percentile: {percentile}%</span>
         </div>
 
         {/* Divider */}
@@ -42,7 +42,7 @@ const QuickStatistics: React.FC<QuickStatisticsProps> = ({ rank, percentile, cor
             <CheckCircle className="text-green-500 w-8 h-8" />
           </div>
           <p className="text-xl font-bold mt-2">{correctAnswers}</p>
-          <span className="text-gray-500 text-sm">CORRECT ANSWERS</span>
+          <span className="text-gray-900 font-semibold text-sm">Correct Answers: {correctAnswers}</span>
         </div>
 
       </div>
