@@ -5,8 +5,9 @@ import ComparisonGraph from "@/components/ComparisonGraph"; // Replaces SkillCha
 import QuestionAnalysis from "@/components/QuestionAnalysis";
 import QuickStatistics from "@/components/QuickStatistics";
 import ProgressBar from "@/components/ProgressBar";
-import TestSummary from "@/components/TestSummary";
 import UpdateScoresModal from "@/components/UpdateScoresModal";
+import Image from "next/image";
+import logo from "../components/images/pngegg.jpg";
 
 export default function Home() {
   // State for statistics (used in QuickStatistics, TestSummary & Graph)
@@ -40,9 +41,8 @@ export default function Home() {
             <div className="flex flex-col gap-6">
               {/* Test Summary (Pass the update function) */}
               <div className="bg-white rounded-lg p-6 flex items-center justify-between shadow-md">
-                <div className="flex items-center">
-                  <img src="/html5-logo.png" alt="HTML5 Logo" className="w-16 h-16 mr-4" />
-                  <div>
+                <div className="flex items-center -mx-7">
+                <Image src={logo} alt="HTML5 Logo" width={64} height={64} />                  <div>
                     <h2 className="text-lg font-bold">Hyper Text Markup Language</h2>
                     <p className="text-sm text-gray-600">
                       Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
                 <button 
                   onClick={() => setIsModalOpen(true)} 
-                  className="px-5 py-2 bg-blue-900 text-white rounded-lg shadow-md hover:bg-blue-700"
+                  className="px-5 py-2 bg-blue-900 text-white rounded-lg shadow-md hover:bg-blue-700 mr-[-15px]"
                 >
                   Update
                 </button>
