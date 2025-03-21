@@ -14,20 +14,20 @@ const TestSummary: React.FC<TestSummaryProps> = ({ title, questions, duration, s
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between bg-white shadow-md rounded-lg p-4">
-      <div className="flex items-center gap-4 py-8">
-        <Image src={logo} alt={`${title} Logo`} width={50} height={50} />
+    <div className="flex items-center justify-between bg-white shadow-md rounded-lg p-4 px-6">
+      <div className="flex items-center gap-1 -mx-6">
+        <Image src={logo} alt={`${title} Logo`} width={60} height={0} />
         <div>
-          <h2 className="font-bold text-lg">{title}</h2>
-          <p className="text-gray-600 text-sm">
+          <h2 className="font-semibold text-lg">{title}</h2>
+          <p className="text-gray-500 text-sm ">
             Questions: {questions} | Duration: {duration} | Submitted on {submittedOn}
           </p>
         </div>
       </div>
 
-      <button
+      <button 
         onClick={() => setIsModalOpen(true)}
-        className="bg-blue-900 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-700 "
+        className="bg-blue-900 text-white px-5 py-2 -mt-9 rounded-lg shadow-md hover:bg-blue-700 -mx-7"
       >
         Update
       </button>

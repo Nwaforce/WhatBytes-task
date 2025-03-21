@@ -33,9 +33,6 @@ export default function Home() {
               </div>
               <div className="bg-white rounded-lg p-6">
                 <QuickStatistics 
-                rank={1}
-                percentile={30}
-                correctAnswers="10/15"
                 />
               </div>
               <div className="bg-white  rounded-lg p-6">

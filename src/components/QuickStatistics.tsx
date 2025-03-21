@@ -8,29 +8,43 @@ interface QuickStatisticsProps {
 
 const QuickStatistics: React.FC<QuickStatisticsProps> = ({ rank, percentile, correctAnswers }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 mt-4">
-      <h3 className="font-semibold text-lg mb-3">Quick Statistics</h3>
-      <div className="grid grid-cols-3 gap-4">
+    <div className="bg-white shadow-md rounded-lg p-5 mt-4 border border-gray-200">
+      <h3 className="font-bold text-lg mb-4">Quick Statistics</h3>
+      <div className="flex justify-between items-center text-center">
+        
         {/* Rank */}
         <div className="flex flex-col items-center">
-          <Trophy className="text-yellow-500 w-8 h-8" />
-          <p className="text-xl font-bold">{rank}</p>
+          <div className="bg-gray-100 rounded-full p-3">
+            <Trophy className="text-yellow-500 w-8 h-8" />
+          </div>
+          <p className="text-xl font-bold mt-2">{rank}</p>
           <span className="text-gray-500 text-sm">YOUR RANK</span>
         </div>
 
+        {/* Divider */}
+        <div className="h-16 w-px bg-gray-300"></div>
+
         {/* Percentile */}
         <div className="flex flex-col items-center">
-          <Clipboard className="text-gray-500 w-8 h-8" />
-          <p className="text-xl font-bold">{percentile}%</p>
+          <div className="bg-gray-100 rounded-full p-3">
+            <Clipboard className="text-gray-500 w-8 h-8" />
+          </div>
+          <p className="text-xl font-bold mt-2">{percentile}%</p>
           <span className="text-gray-500 text-sm">PERCENTILE</span>
         </div>
 
+        {/* Divider */}
+        <div className="h-16 w-px bg-gray-300"></div>
+
         {/* Correct Answers */}
         <div className="flex flex-col items-center">
-          <CheckCircle className="text-green-500 w-8 h-8" />
-          <p className="text-xl font-bold">{correctAnswers}</p>
+          <div className="bg-gray-100 rounded-full p-3">
+            <CheckCircle className="text-green-500 w-8 h-8" />
+          </div>
+          <p className="text-xl font-bold mt-2">{correctAnswers}</p>
           <span className="text-gray-500 text-sm">CORRECT ANSWERS</span>
         </div>
+
       </div>
     </div>
   );
