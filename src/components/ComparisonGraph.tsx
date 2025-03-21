@@ -19,7 +19,7 @@ const ComparisonGraph: React.FC<ComparisonGraphProps> = ({ percentile }) => {
     <div className="bg-white p-4 rounded-lg shadow-md">
       <h3 className="text-lg font-semibold mb-2">Comparison Graph</h3>
       <p className="text-sm text-gray-500">
-        You scored <strong>{percentile}% percentile</strong>, which is {percentile < 72 ? "lower" : "higher"} than the average 72%.
+        You scored <strong>{percentile}% percentile</strong>, which is {percentile < 72 ? "lower" : "higher"} than the average 72% of all the engineers who took this assessment.
       </p>
 
       <ResponsiveContainer width="100%" height={200}>
