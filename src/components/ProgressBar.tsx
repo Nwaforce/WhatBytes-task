@@ -4,9 +4,13 @@ interface ProgressBarProps {
   color: string;
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ label, percentage, color }) => {
+const ProgressBar: React.FC<ProgressBarProps> = ({
+  label,
+  percentage,
+  color,
+}) => {
   return (
-    <div className="mb-6"> {/* Increased bottom margin for spacing */}
+    <div className="mb-6">
       <div className="flex justify-between text-sm font-medium mb-1">
         <span className="text-gray-700">{label}</span>
         <span className="text-gray-800">{percentage}%</span>

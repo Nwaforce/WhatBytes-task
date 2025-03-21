@@ -6,7 +6,10 @@ interface QuestionAnalysisProps {
   total: number;
 }
 
-const QuestionAnalysis: React.FC<QuestionAnalysisProps> = ({ correct, total }) => {
+const QuestionAnalysis: React.FC<QuestionAnalysisProps> = ({
+  correct,
+  total,
+}) => {
   const percentage = (correct / total) * 100;
 
   return (
@@ -14,12 +17,14 @@ const QuestionAnalysis: React.FC<QuestionAnalysisProps> = ({ correct, total }) =
       {/* Title & Score Alignment */}
       <div className="flex justify-between items-center mb-2">
         <h3 className="text-lg font-semibold">Question Analysis</h3>
-        <span className="text-blue-600 font-bold text-sm">{correct}/{total}</span>
+        <span className="text-blue-600 font-bold text-sm">
+          {correct}/{total}
+        </span>
       </div>
 
       {/* Description */}
       <p className="text-sm text-gray-500">
-        You scored <strong>{correct} questions correct</strong> out of {total}. 
+        You scored <strong>{correct} questions correct</strong> out of {total}.
         However, it still needs some improvements.
       </p>
 

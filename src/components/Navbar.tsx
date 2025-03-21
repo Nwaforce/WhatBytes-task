@@ -1,5 +1,4 @@
-import Link from "next/link";
-import UserAvatar from "@/components/UserAvatar";
+import UserAvatar from "../components/UserAvatar";
 
 const Navbar: React.FC = () => {
   return (
@@ -8,9 +7,9 @@ const Navbar: React.FC = () => {
         <div className="text-2xl font-bold flex items-center gap-2">
           WhatBytes
         </div>
-      </h1>  
+      </h1>
 
-      {/* Use the UserAvatar Component */}
+      {/* Use the UserAvatar Component  */}
       <UserAvatar name="Emmanuel" imageUrl="" />
 
       <button className="md:hidden text-gray-700">☰</button>
