@@ -13,7 +13,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="h-screen w-64 bg-white shadow-md  px-5 py-20 flex flex-col">
+    <div className="w-64 bg-white shadow-md  px-5 py-20 flex flex-col">
      
       {/* Menu */}
       <nav className="mt-8 flex flex-col gap-2">
