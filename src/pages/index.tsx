@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="px-5 py-2 bg-blue-900 text-white rounded-lg shadow-md hover:bg-blue-700 mr-[-15px]"
+                  className="px-5 py-2 bg-blue-900 text-white rounded-lg shadow-md hover:bg-blue-700 mr-[-15px] cursor-pointer"
                 >
                   Update
                 </button>

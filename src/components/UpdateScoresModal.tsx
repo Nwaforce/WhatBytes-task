@@ -158,13 +158,13 @@ export default function UpdateScoresModal({
         {/* Buttons */}
         <div className="flex justify-end gap-4 mt-4">
           <button
-            className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg"
+            className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg cursor-pointer"
             onClick={onClose}
           >
             Cancel
           </button>
           <button
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 cursor-pointer"
             onClick={validateAndSubmit}
           >
             Save →
