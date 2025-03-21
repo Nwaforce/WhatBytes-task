@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
-import ComparisonGraph from "@/components/ComparisonGraph";
-import QuestionAnalysis from "@/components/QuestionAnalysis";
-import QuickStatistics from "@/components/QuickStatistics";
-import ProgressBar from "@/components/ProgressBar";
-import UpdateScoresModal from "@/components/UpdateScoresModal";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+import ComparisonGraph from "../components/ComparisonGraph";
+import QuestionAnalysis from "../components/QuestionAnalysis";
+import QuickStatistics from "../components/QuickStatistics";
+import ProgressBar from "../components/ProgressBar";
+import UpdateScoresModal from "../components/UpdateScoresModal";
 import Image from "next/image";
 import logo from "../components/images/pngegg.jpg";
 
