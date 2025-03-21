@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import ComparisonGraph from "@/components/ComparisonGraph"; // Replaces SkillChart
+import ComparisonGraph from "@/components/ComparisonGraph";
 import QuestionAnalysis from "@/components/QuestionAnalysis";
 import QuickStatistics from "@/components/QuickStatistics";
 import ProgressBar from "@/components/ProgressBar";
@@ -17,10 +17,16 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Function to update statistics from the modal
-  const updateStatistics = (updatedData: { rank?: number; percentile?: number; correctAnswers?: number }) => {
+  const updateStatistics = (updatedData: {
+    rank?: number;
+    percentile?: number;
+    correctAnswers?: number;
+  }) => {
     if (updatedData.rank !== undefined) setRank(updatedData.rank);
-    if (updatedData.percentile !== undefined) setPercentile(updatedData.percentile);
-    if (updatedData.correctAnswers !== undefined) setCorrectAnswers(updatedData.correctAnswers);
+    if (updatedData.percentile !== undefined)
+      setPercentile(updatedData.percentile);
+    if (updatedData.correctAnswers !== undefined)
+      setCorrectAnswers(updatedData.correctAnswers);
   };
 
   return (
@@ -42,15 +48,19 @@ export default function Home() {
               {/* Test Summary (Pass the update function) */}
               <div className="bg-white rounded-lg p-6 flex items-center justify-between shadow-md">
                 <div className="flex items-center -mx-7">
-                <Image src={logo} alt="HTML5 Logo" width={64} height={64} />                  <div>
-                    <h2 className="text-lg font-bold">Hyper Text Markup Language</h2>
+                  <Image src={logo} alt="HTML5 Logo" width={64} height={64} />{" "}
+                  <div>
+                    <h2 className="text-lg font-bold">
+                      Hyper Text Markup Language
+                    </h2>
                     <p className="text-sm text-gray-600">
-                      Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021
+                      Questions: 08 | Duration: 15 mins | Submitted on 5 June
+                      2021
                     </p>
                   </div>
                 </div>
-                <button 
-                  onClick={() => setIsModalOpen(true)} 
+                <button
+                  onClick={() => setIsModalOpen(true)}
                   className="px-5 py-2 bg-blue-900 text-white rounded-lg shadow-md hover:bg-blue-700 mr-[-15px]"
                 >
                   Update
@@ -59,7 +69,11 @@ export default function Home() {
 
               {/* Quick Statistics (Updates when the modal saves new data) */}
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <QuickStatistics rank={rank} percentile={percentile} correctAnswers={correctAnswers} />
+                <QuickStatistics
+                  rank={rank}
+                  percentile={percentile}
+                  correctAnswers={correctAnswers}
+                />
               </div>
 
               {/* Comparison Graph (Dynamic percentile update) */}
@@ -72,10 +86,26 @@ export default function Home() {
             <div className="flex flex-col gap-6">
               {/* Progress Bars */}
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <ProgressBar label="HTML Tools, Forms, History" percentage={80} color="blue" />
-                <ProgressBar label="Tags & References in HTML" percentage={60} color="orange" />
-                <ProgressBar label="Tables & References in HTML" percentage={24} color="red" />
-                <ProgressBar label="Tables & CSS Basics" percentage={96} color="green" />
+                <ProgressBar
+                  label="HTML Tools, Forms, History"
+                  percentage={80}
+                  color="blue"
+                />
+                <ProgressBar
+                  label="Tags & References in HTML"
+                  percentage={60}
+                  color="orange"
+                />
+                <ProgressBar
+                  label="Tables & References in HTML"
+                  percentage={24}
+                  color="red"
+                />
+                <ProgressBar
+                  label="Tables & CSS Basics"
+                  percentage={96}
+                  color="green"
+                />
               </div>
 
               {/* Question Analysis */}
@@ -89,10 +119,10 @@ export default function Home() {
 
       {/* Update Scores Modal */}
       {isModalOpen && (
-        <UpdateScoresModal 
-          isOpen={isModalOpen} 
+        <UpdateScoresModal
+          isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          onSave={updateStatistics} 
+          onSave={updateStatistics}
           initialRank={rank}
           initialPercentile={percentile}
           initialCorrectAnswers={correctAnswers}
