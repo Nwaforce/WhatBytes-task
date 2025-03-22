@@ -1,40 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Skill Test Dashboard
 
-## Getting Started
+This is a **Skill Test Dashboard** built using **Next.js** and **Tailwind CSS**. The application provides an interactive interface for users to view test summaries, analyze question performance, and track progress using visual statistics.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 📊 **Test Summary**: Displays test details like duration, number of questions, and submission date.
+- 📈 **Quick Statistics**: Shows ranking, percentile, and correct answers dynamically.
+- 📉 **Skill-wise Progress**: Uses progress bars to show proficiency in different topics.
+- 🔄 **Update Scores Modal**: Allows users to update their test results.
+- 📑 **Question Analysis**: Circular progress bar visualization for correct answers.
+- 📌 **Sidebar Navigation**: Provides links to Dashboard, Skill Test, and Internship sections.
+- 📱 **Responsive UI**: Works seamlessly on desktop and mobile.
+
+## 🛠 Tech Stack
+
+- **Next.js** – For server-side rendering and frontend development.
+- **Tailwind CSS** – For responsive and modern UI styling.
+- **React Hooks** – For state management.
+- **Lucide Icons** – For clean and customizable icons.
+- **React Circular Progressbar** – For question analysis visualization.
+
+## 📥 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Nwaforce/WhatBytes-task
+   ```
+
+2. Navigate to the project folder:
+   ```bash
+   cd skill-test-dashboard
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open **http://localhost:3000/** in your browser.
+
+## 📂 Folder Structure
+
+```
+📁 skill-test-dashboard
+│── 📂 components
+│   ├── Navbar.tsx
+│   ├── Sidebar.tsx
+│   ├── TestSummary.tsx
+│   ├── QuickStatistics.tsx
+│   ├── ProgressBar.tsx
+│   ├── QuestionAnalysis.tsx
+│   ├── ComparisonGraph.tsx
+│   ├── UpdateScoresModal.tsx
+│── 📂 pages
+│   ├── index.tsx (Main Dashboard Page)
+│── 📂 public/images (Contains project assets)
+│── 📄 tailwind.config.js
+│── 📄 tsconfig.json
+│── 📄 next.config.js
+│── 📄 package.json
+│── 📄 README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 How It Works
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- The **Sidebar** allows easy navigation.
+- The **Test Summary** card displays test information.
+- The **Quick Statistics** section updates dynamically based on user inputs.
+- The **Progress Bars** visualize performance in different skill areas.
+- The **Update Scores Modal** allows updating scores, affecting the statistics dynamically.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📜 License
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+This project is licensed under the **MIT License**.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+Made with ❤️ by Your Name
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
