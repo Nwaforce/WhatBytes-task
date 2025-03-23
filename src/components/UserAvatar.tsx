@@ -5,7 +5,7 @@ interface UserAvatarProps {
   imageUrl: string;
 }
 
-const UserAvatar: React.FC<UserAvatarProps> = ({ name, imageUrl }) => {
+const UserAvatar: React.FC<UserAvatarProps> = ({ name }) => {
   return (
     <div className="flex items-center space-x-2 rounded-lg px-2 py-0.5 shadow-sm bg-white">
       <Image

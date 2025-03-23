@@ -35,7 +35,7 @@ export default function UpdateScoresModal({
   if (!isOpen) return null; // Prevent rendering if modal is closed
 
   const validateAndSubmit = () => {
-    let newErrors: {
+    const newErrors: {
       rank?: string;
       percentile?: string;
       correctAnswers?: string;
