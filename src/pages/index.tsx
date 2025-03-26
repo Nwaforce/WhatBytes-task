@@ -31,11 +31,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen">
-      {/* Navbar */}
       <Navbar />
 
       <div className="flex flex-1">
-        {/* Sidebar */}
         <Sidebar />
 
         {/* Main Content */}
