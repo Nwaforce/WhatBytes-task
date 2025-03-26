@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Home, BarChart, FileText, Menu } from "lucide-react";
 import Link from "next/link";
-// import Image from "next/image";
 
 const Sidebar = () => {
   const [active, setActive] = useState("Skill Test");
