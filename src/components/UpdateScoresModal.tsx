@@ -32,7 +32,7 @@ export default function UpdateScoresModal({
     correctAnswers?: string;
   }>({});
 
-  if (!isOpen) return null; // Prevent rendering if modal is closed
+  if (!isOpen) return null; 
 
   const validateAndSubmit = () => {
     const newErrors: {
