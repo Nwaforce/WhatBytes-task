@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   const [active, setActive] = useState("Skill Test");
-  const [isOpen, setIsOpen] = useState(false); // State for mobile toggle
+  const [isOpen, setIsOpen] = useState(false); 
 
   const menuItems = [
     { name: "Dashboard", icon: <Home />, link: "/" },
