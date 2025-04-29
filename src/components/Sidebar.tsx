@@ -42,7 +42,7 @@ const Sidebar = () => {
               }`}
               onClick={() => {
                 setActive(item.name);
-                setIsOpen(false); // Close on mobile click
+                setIsOpen(false);
               }}
             >
               {item.icon} {item.name}
