@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import ComparisonGraph from "../components/ComparisonGraph";
@@ -8,6 +8,16 @@ import ProgressBar from "../components/ProgressBar";
 import UpdateScoresModal from "../components/UpdateScoresModal";
 import Image from "next/image";
 import logo from "../components/images/pngegg.jpg";
+
+
+export default function Home() {
+  const [submittedAt, setSubmittedAt] = useState("");
+
+  useEffect(() => {
+    const now = new Date();
+    const formatted = now.toLocaleString(); // You can customize this
+    setSubmittedAt(formatted);
+  }, []);
 
 export default function Home() {
   // State for statistics (used in QuickStatistics, TestSummary & Graph)
