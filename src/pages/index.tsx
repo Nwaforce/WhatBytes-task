@@ -52,8 +52,8 @@ export default function Home() {
                       Hyper Text Markup Language
                     </h2>
                     <p className="text-sm text-gray-600">
-                      Questions: 08 | Duration: 15 mins | Submitted on 5 June
-                      2021
+                      Questions: 08 | Duration: 15 mins | Submitted on{" "}
+                      {new Date().toLocaleString()}
                     </p>
                   </div>
                 </div>
