@@ -48,9 +48,12 @@ export default function Home() {
                 <div className="flex items-center -mx-7">
                   <Image src={logo} alt="HTML5 Logo" width={64} height={64} />
                   <div>
-                    <h2 className="text-lg font-bold">Hyper Text Markup Language</h2>
+                    <h2 className="text-lg font-bold">
+                      Hyper Text Markup Language
+                    </h2>
                     <p className="text-sm text-gray-600">
-                      Questions: 08 | Duration: 15 mins | Submitted on {submittedAt}
+                      Questions: 08 | Duration: 15 mins | Submitted on{" "}
+                      {submittedAt}
                     </p>
                   </div>
                 </div>
@@ -77,10 +80,26 @@ export default function Home() {
 
             <div className="flex flex-col gap-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <ProgressBar label="HTML Tools, Forms, History" percentage={80} color="blue" />
-                <ProgressBar label="Tags & References in HTML" percentage={60} color="orange" />
-                <ProgressBar label="Tables & References in HTML" percentage={24} color="red" />
-                <ProgressBar label="Tables & CSS Basics" percentage={96} color="green" />
+                <ProgressBar
+                  label="HTML Tools, Forms, History"
+                  percentage={80}
+                  color="blue"
+                />
+                <ProgressBar
+                  label="Tags & References in HTML"
+                  percentage={60}
+                  color="orange"
+                />
+                <ProgressBar
+                  label="Tables & References in HTML"
+                  percentage={24}
+                  color="red"
+                />
+                <ProgressBar
+                  label="Tables & CSS Basics"
+                  percentage={96}
+                  color="green"
+                />
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow-md">
