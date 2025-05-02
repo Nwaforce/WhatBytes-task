@@ -52,7 +52,7 @@ export default function Home() {
                       Hyper Text Markup Language
                     </h2>
                     <p className="text-sm text-gray-600">
-                      Questions: 08 | Duration: 15 mins | Submitted on{" "}
+                       Questions: 08 | Duration: 15 mins | Submitted on{" "}
                       {submittedAt}
                     </p>
                   </div>
