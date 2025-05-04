@@ -32,7 +32,7 @@ export default function UpdateScoresModal({
     correctAnswers?: string;
   }>({});
 
-  if (!isOpen) return null; 
+  if (!isOpen) return null;
 
   const validateAndSubmit = () => {
     const newErrors: {
@@ -63,17 +63,17 @@ export default function UpdateScoresModal({
       percentile: Number(percentile),
       correctAnswers: Number(correctAnswers),
     });
-    onClose(); 
+    onClose();
   };
 
   return (
     <div
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
-      onClick={onClose} 
+      onClick={onClose}
     >
       <div
         className="bg-white p-6 rounded-lg shadow-lg w-[500px]"
-        onClick={(e) => e.stopPropagation()} 
+        onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-2xl font-bold">Update Scores</h2>
         <div className="mt-4 space-y-4">
