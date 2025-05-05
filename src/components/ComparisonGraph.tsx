@@ -12,7 +12,7 @@ interface ComparisonGraphProps {
 }
 
 const ComparisonGraph: React.FC<ComparisonGraphProps> = ({ percentile }) => {
-  // Dynamically update data to reflect percentile changes
+ 
   const data = [
     { name: "1", percentile: 10 },
     { name: "2", percentile: 25 },
