@@ -12,7 +12,6 @@ interface ComparisonGraphProps {
 }
 
 const ComparisonGraph: React.FC<ComparisonGraphProps> = ({ percentile }) => {
- 
   const data = [
     { name: "1", percentile: 10 },
     { name: "2", percentile: 25 },
