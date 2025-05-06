@@ -11,8 +11,8 @@ const UserAvatar: React.FC<UserAvatarProps> = ({ name }) => {
       <Image
         src={img}
         alt={`${name}'s Avatar`}
-        width={28}
-        height={28}
+        width={38}
+        height={38}
         className="rounded-full object-cover"
       />
       <span className="text-black font-bold text-sm whitespace-nowrap">
