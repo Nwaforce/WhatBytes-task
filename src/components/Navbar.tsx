@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       {/* Use the UserAvatar Component  */}
       <UserAvatar name="Emmanuel" imageUrl="" />
 
-      <button className="md:hidden text-gray-700">☰</button>
+      {/* <button className="md:hidden text-gray-700">☰</button> */}
     </nav>
   );
 };
