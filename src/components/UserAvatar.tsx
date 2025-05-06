@@ -7,7 +7,7 @@ interface UserAvatarProps {
 
 const UserAvatar: React.FC<UserAvatarProps> = ({ name }) => {
   return (
-    <div className="flex items-center space-x-2 rounded-lg px-4 py-0.5 shadow-sm bg-white">
+    <div className="flex items-center space-x-3 rounded-lg px-4 py-0.5 shadow-sm bg-white">
       <Image
         src={img}
         alt={`${name}'s Avatar`}
