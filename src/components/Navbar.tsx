@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       {/* Use the UserAvatar Component  */}
       <UserAvatar name="Emmanuel" imageUrl="" />
 
-      
+
     </nav>
   );
 };
