@@ -48,3 +48,4 @@ const ComparisonGraph: React.FC<ComparisonGraphProps> = ({ percentile }) => {
 };
 
 export default ComparisonGraph;
+ 
